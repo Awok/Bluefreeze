@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2F60011-5E3C-45AD-9AFE-736FD804A5A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Bluefreeze.My.MyApplication</StartupObject>
+    <RootNamespace>Bluefreeze</RootNamespace>
+    <AssemblyName>Bluefreeze</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>bluefreeze.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Bluefreeze.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Bluefreeze.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootfreeze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bootfreeze.Designer.vb">
+      <DependentUpon>Bootfreeze.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.vb">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="v10letfreeze.Designer.vb">
+      <DependentUpon>v10letfreeze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="v10letfreeze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bootfreeze.resx">
+      <DependentUpon>Bootfreeze.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="v10letfreeze.resx">
+      <DependentUpon>v10letfreeze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connectatv2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main.zip" />
+    <None Include="Resources\pic.zip" />
+    <None Include="Resources\remote_both.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\210.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\212.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\213.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\214.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\215.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\release.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00023.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00025.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00026.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00027.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00028.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00029.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00033.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00034.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00035.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00036.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00037.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00038.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00039.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00040.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00042.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00043.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00044.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00045.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00046.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00047.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00048.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00049.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00052.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00053.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00054.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00055.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00056.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00057.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00058.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00059.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00060.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00061.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00062.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00063.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00064.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00066.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00067.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00068.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00069.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00070.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00072.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00073.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00074.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00075.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00076.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00077.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00079.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00081.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00082.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00083.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00084.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00085.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00086.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00087.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00088.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00089.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00091.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00092.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00093.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00094.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comp 2_1_00095.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bluefreeze.ico" />
+    <None Include="Resources\redsn0w.exe" />
+    <None Include="Resources\main.dll" />
+    <None Include="Resources\v10.jpg" />
+    <None Include="Resources\freezy.jpg" />
+    <None Include="Resources\s-irecovery.exe" />
+    <None Include="Resources\clipartsnow-23.jpg" />
+    <None Include="Resources\V10letfreeze.jpg" />
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
